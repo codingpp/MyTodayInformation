@@ -1,4 +1,4 @@
-package com.coding.mytodayinformation;
+package com.coding.mytodayinformation.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

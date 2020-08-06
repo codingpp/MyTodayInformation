@@ -1,10 +1,13 @@
-package com.coding.mytodayinformation;
+package com.coding.mytodayinformation.ui;
 
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.coding.mytodayinformation.R;
+import com.coding.mytodayinformation.view.FullScreenVideoView;
 
 import java.io.File;
 
