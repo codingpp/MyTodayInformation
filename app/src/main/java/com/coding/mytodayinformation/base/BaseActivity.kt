@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 /**
  *
- * @author SunPan
+ * @author codingpp
  * @date 2020/8/6
  */
 open class BaseActivity : AppCompatActivity() {

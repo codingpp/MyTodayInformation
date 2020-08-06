@@ -27,7 +27,7 @@ import butterknife.OnClick;
 /**
  * 启动页
  *
- * @author codingPan
+ * @author codingpp
  * @date 2019-10-30
  */
 public class SplashActivity extends BaseActivity {
