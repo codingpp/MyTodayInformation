@@ -1,6 +1,5 @@
 package com.coding.mytodayinformation.ui;
 
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -75,8 +74,7 @@ public class SplashActivity extends BaseActivity {
      * 跳转到主页
      */
     private void jumpToMain() {
-        Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-        startActivity(intent);
+        MainActivity.Companion.jump(this);
         finish();
     }
 
