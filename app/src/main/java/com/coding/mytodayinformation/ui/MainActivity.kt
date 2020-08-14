@@ -2,9 +2,14 @@ package com.coding.mytodayinformation.ui
 
 import android.content.Context
 import android.content.Intent
+import android.net.http.SslError
 import android.os.Bundle
+import android.webkit.SslErrorHandler
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import com.coding.mytodayinformation.R
+import kotlinx.android.synthetic.main.activity_main.*
 
 /**
  * 主页
@@ -27,5 +32,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        webivew.loadUrl("https://www.baidu.com/")
+        webivew.webViewClient=object: WebViewClient(){
+            override fun onReceivedSslError(
+                view: WebView?,
+                handler: SslErrorHandler?,
+                error: SslError?
+            ) {
+                handler?.proceed()
+            }
+        }
     }
 }
